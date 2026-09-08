@@ -151,6 +151,10 @@ const openProject = (project) => {
   color: var(--text-0);
   border-radius: 8px;
   font-size: 0.85rem;
+} 
+
+.expand-btn:hover {
+  color: var(--accent);
 }
 
 .project-card h3 {
