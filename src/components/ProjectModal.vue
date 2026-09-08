@@ -64,7 +64,14 @@ watch(
                 <i class="fa-solid fa-chevron-right"></i>
               </button>
               <div class="image-dots" aria-label="Choose project image">
-
+                <button
+                  v-for="(image, index) in projectImages"
+                  :key="index"
+                  class="image-dot"
+                  :class="{ active: selectedImageIndex === index }"
+                  :aria-label="'View project image ' + (index + 1)"
+                  @click="selectImage(index)"
+                ></button>
               </div>
             </template>
           </div>
@@ -114,8 +121,7 @@ watch(
 
 .modal-panel {
   position: relative;
-  width: 100%;
-  max-width: 640px;
+  width: min(100%, 820px);
   max-height: 88vh;
   overflow-y: auto;
   background: var(--bg-1);
@@ -143,12 +149,16 @@ watch(
 }
 
 .modal-image {
-  aspect-ratio: 16 / 9;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   border-radius: 12px 12px 0 0;
+  background: rgba(10, 10, 10, 0.25);
 }
 
 .modal-image img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -201,6 +211,11 @@ watch(
   padding: 0;
   border: 1px solid var(--text-0);
   border-radius: 999px;
+  background: transparent;
+}
+
+.image-dot.active {
+  background: var(--text-0);
 }
 
 .modal-body {

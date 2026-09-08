@@ -11,6 +11,13 @@ import plateNumber from '@/assets/images/ParkingSystem/plateNumber.jpg';
 import dashboard from '@/assets/images/ParkingSystem/dashboard.png';
 import invoice from '@/assets/images/ParkingSystem/invoice.png';
 import userInterface from '@/assets/images/ParkingSystem/user interface.png';
+
+// Import images for the vegetable system project
+import allProducts from '@/assets/images/vegetableShop/allProducts.jpg';
+import customInvoice from '@/assets/images/vegetableShop/customInvoice.jpg';
+import invoice1 from '@/assets/images/vegetableShop/image.png';
+import orderPage from '@/assets/images/vegetableShop/orderPage.jpg';
+
 const activeProject = ref(null)
 const projects = [
   {
@@ -20,6 +27,7 @@ const projects = [
     desc: 'A real-time online auction platform that allows users to browse products, participate in live auctions, and place bids in real time. The system includes secure authentication, auction scheduling, real-time bidding and an admin dashboard for managing auctions and products.',
     image: auction2,
     images: [
+      auction2,
       auction1,
       auction3,
       auction4
@@ -33,6 +41,7 @@ const projects = [
     desc: 'An AI-powered parking management system that automates vehicle entry and exit using license plate recognition. The system manages parking spaces, calculates parking fees, tracks vehicle records, and provides an admin dashboard for monitoring parking operations.',
     image: plateNumber,
     images: [
+      plateNumber,
       dashboard,
       invoice,
       userInterface
@@ -40,14 +49,16 @@ const projects = [
     href: '#'
   },
   {
-    title: 'FinTrack',
-    tagline: 'Track your finances smarter',
-    desc: 'Personal finance dashboard built with React, Recharts and Tailwind CSS.',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&auto=format&fit=crop&q=70',
+    title: 'Vegetable Shop Management System',
+    tagline: 'Personal project',
+    tech: '[PHP , Laravel , MySQL , Bootstrap , HTML , CSS , JavaScript]',
+    desc: 'A web-based management system designed to help vegetable shops efficiently manage products, inventory, sales, customers, and daily business operations. The system allows shop staff to manage vegetable stock, track product prices, process orders, and monitor sales records through an easy-to-use dashboard.',
+    image: orderPage,
     images: [
-      'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&auto=format&fit=crop&q=70',
-      'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=700&auto=format&fit=crop&q=70',
-      'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=700&auto=format&fit=crop&q=70'
+      orderPage,
+      allProducts,
+      customInvoice,
+      invoice1
     ],
     href: '#'
   }
