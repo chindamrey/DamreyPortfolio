@@ -17,7 +17,7 @@ const menuOpen = ref(false)
   <header class="site-header">
     <div class="container header-inner">
       <a href="#home" class="logo">
-        <span class="logo-mark">A</span>
+        <span class="logo-mark">D</span>
         <span>Damrey <span class="accent-text">DEV</span></span>
       </a>
 
@@ -100,7 +100,7 @@ const menuOpen = ref(false)
 }
 
 .nav-desktop a:hover {
-  color: var(--text-0);
+  color: var(--accent);
 }
 
 .talk-btn {

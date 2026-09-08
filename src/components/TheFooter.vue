@@ -30,7 +30,7 @@ function subscribe() {
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#home" class="logo">
-          <span class="logo-mark">A</span>
+          <span class="logo-mark">D</span>
           <span>Damrey <span class="accent-text">DEV</span></span>
         </a>
         <p>Building the web, one pixel at a time.</p>
@@ -133,6 +133,10 @@ function subscribe() {
   border: 1px solid var(--border);
 }
 
+.footer-socials a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
 .footer-note {
   font-size: 0.85rem;
   margin-top: 4px;
