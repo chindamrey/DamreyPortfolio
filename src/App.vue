@@ -1,6 +1,6 @@
 <script setup>
 import TheHeader from './components/TheHeader.vue'
-import HeroSection from './components/HeroSection.vue'
+import HeroSection from './components/HeroSectionView.vue'
 import AboutSection from './components/AboutSection.vue'
 import ServicesSection from './components/ServicesSection.vue'
 import TechStackSection from './components/TechStackSection.vue'

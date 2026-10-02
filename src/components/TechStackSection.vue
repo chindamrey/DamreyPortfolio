@@ -3,9 +3,10 @@ const stack = [
   { icon: 'fa-brands fa-html5', label: 'HTML5', color: '#e34f26' },
   { icon: 'fa-brands fa-css3-alt', label: 'CSS3', color: '#2965f1' },
   { icon: 'fa-brands fa-square-js', label: 'JavaScript', color: '#f0db4f' },
-  { icon: 'fa-brands fa-node', label: 'Node.js', color: '#4d8d47' },
-  { icon: 'fa-brands fa-bootstrap', label: 'Bootstrap', color: '#c85be9' },
   { icon: 'fa-brands fa-vuejs', label: 'Vue.js', color: '#4d8d47' },
+  { icon: 'fa-brands fa-node', label: 'Node.js', color: '#4d8d47' },
+  { icon: 'fa-brands fa-square-js', label: 'Express.js', color: '#f0db4f' },
+  { icon: 'fa-solid fa-database', label: 'MySql', color: '#2c94f5' },
   { icon: 'fa-brands fa-git-alt', label: 'Git', color: '#f05033' },
   { icon: 'fa-brands fa-github', label: 'GitHub', color: '#ffffff' }
 ]
