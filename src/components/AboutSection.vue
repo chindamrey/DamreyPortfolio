@@ -24,18 +24,18 @@ const details = [
           real-time systems, and solving real-world
           problems through technology.
         </p>
-        <p class="signature">Damrey</p>
       </div>
-
-      <dl class="about-details">
-        <div v-for="d in details" :key="d.label" class="detail-item">
-          <div class="detail-icon"><i :class="d.icon"></i></div>
-          <div>
-            <dt>{{ d.label }}</dt>
-            <dd>{{ d.value }}</dd>
+      <div class="about-details-wrap">
+        <dl class="about-details">
+          <div v-for="d in details" :key="d.label" class="detail-item">
+            <div class="detail-icon"><i :class="d.icon"></i></div>
+            <div>
+              <dt>{{ d.label }}</dt>
+              <dd>{{ d.value }}</dd>
+            </div>
           </div>
-        </div>
-      </dl>
+        </dl>
+      </div>
     </div>
   </section>
 </template>
@@ -69,11 +69,16 @@ const details = [
   font-size: 1.4rem;
   margin-top: 22px;
 }
-
+.about-details-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 .about-details {
-  display: grid;
+  display: grid;  
   grid-template-columns: 1fr 1fr;
-  gap: 24px 32px;
+  gap: 44px 32px;
 }
 
 .detail-item {

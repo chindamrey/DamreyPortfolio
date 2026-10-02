@@ -18,9 +18,23 @@ const scholership = [
   {
     degree: 'Web Development Scholarship',
     school: 'Abstract of New Technology (ANT), Phnom Penh',
-    period: '2025 — 2026',
+    period: 'Jun 2025 — Jul 2026',
     detail: 'Focused on Frontend , Backend Web Development '
   },
+    {
+    degree: 'Network Management Scholarship',
+    school: 'Micronet International College, Brunei Darussalam',
+    period: 'Apr 2024 — Jul 2024',
+    detail: 'Focused on Network Management and Cloud Computing'
+  },
+
+  {
+    degree: 'C# Programming Scholarship',
+    school: 'ETEC Center, Phnom Penh',
+    period: ' Sep 2023 — Dec 2023',
+    detail: 'Focused on C# Programming and Software Development'
+  },
+
 ]
 </script>
 

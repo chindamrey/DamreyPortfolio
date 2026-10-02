@@ -64,26 +64,28 @@ watch(
                 <i class="fa-solid fa-chevron-right"></i>
               </button>
               <div class="image-dots" aria-label="Choose project image">
-                <button
-                  v-for="(image, index) in projectImages"
-                  :key="index"
-                  class="image-dot"
-                  :class="{ active: selectedImageIndex === index }"
-                  :aria-label="'View project image ' + (index + 1)"
-                  @click="selectImage(index)"
-                ></button>
+                <button v-for="(image, index) in projectImages" :key="index" class="image-dot"
+                  :class="{ active: selectedImageIndex === index }" :aria-label="'View project image ' + (index + 1)"
+                  @click="selectImage(index)"></button>
               </div>
             </template>
           </div>
 
           <div class="modal-body">
             <span class="modal-eyebrow">{{ project.tagline }}</span>
-            <h3>{{ project.title }}</h3>
-            <div v-if="project.tech && project.tech.length" class="modal-tech">
-              <span>{{ project.tech }}</span>
-            </div>
-            <p class="modal-desc">{{ project.longDesc || project.desc }}</p>
+            <h1>{{ project.title }}</h1>
 
+            <p>
+              {{ project.desc }}
+            </p>
+
+            <!-- Features -->
+            <div class="features">
+              <article v-for="feature in project.features" :key="feature.title">
+                <h3>{{ feature.title }}</h3>
+                <p class="feature-desc">{{ feature.description }}</p>
+              </article>
+            </div>
 
             <ul v-if="project.highlights && project.highlights.length" class="modal-highlights">
               <li v-for="h in project.highlights" :key="h"><i class="fa-solid fa-check"></i>{{ h }}</li>
@@ -245,6 +247,16 @@ watch(
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 18px;
+}
+.features{
+  margin-top: 18px;
+}
+.feature-desc{
+  color: var(--text-1);
+  margin-top: -12px;  
+  padding-left: 38px;
+  margin-bottom: 20px;
+  font-size: 0.88rem;
 }
 
 .tech-pill {
